@@ -47,7 +47,7 @@ const App = () => {
         <h2> Keep your catmaniac dream alive! </h2>
         <h3>😺😸😹😻😼😽🙀😿😾</h3>
         {url && <DiscoverCard name={name} attributes={attributes} image={url} />}
-        <button onClick={handleShuffleClick}>🔀 Discover!</button>
+        <button onClick={handleShuffleClick}> Discover 🔥!</button>
       </div>
       <BanCard bannedAttributes={bannedAttributes} />
     </div>
