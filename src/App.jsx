@@ -10,6 +10,8 @@ const App = () => {
   const [attributes, setAttributes] = useState([]);
   const [bannedAttributes, setBannedAttributes] = useState([]);
 
+  const banned = [];
+
   // https://api.thecatapi.com/v1/images/search?limit=1&has_breeds=1&api_key=live_HjGlprZAz82QZ93n558rIVlaBNzfih6y84K0lo4qZdYoXQn4uMMGptqr7V85vCew
   const makeQuery = () => {
     let query = `https://api.thecatapi.com/v1/images/search?limit=1&has_breeds=1&api_key=${API_KEY}`;
@@ -40,13 +42,18 @@ const App = () => {
     makeQuery();
   };
 
+  const addAttributeToBanList = (e) => {
+    setBannedAttributes((attribute) =>
+      [...attribute, e.target.innerHTML]);
+  };
+
   return (
     <div className="background-image">
       <div>
         <h1 className="title"> Catscovery </h1>
         <h2> Keep your catmaniac dream alive! </h2>
         <h3>😺😸😹😻😼😽🙀😿😾</h3>
-        {url && <DiscoverCard name={name} attributes={attributes} image={url} />}
+        {url && <DiscoverCard name={name} attributes={attributes} image={url} banAttribute={addAttributeToBanList} />}
         <button onClick={handleShuffleClick}> Discover 🔥!</button>
       </div>
       <BanCard bannedAttributes={bannedAttributes} />
