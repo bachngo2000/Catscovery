@@ -1,0 +1,15 @@
+.ban-card {
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 1rem;
+  }
+  
+.banned-section {
+    display: flex;
+    flex-direction: column;
+}

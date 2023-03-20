@@ -1,0 +1,13 @@
+.attribute-card {
+    margin: 0 5px;
+    background-color: #ffd700;
+    box-shadow: 0 3px lightcyan;
+    color: black;
+    font-weight: bold;
+}
+  
+.banned-attribute-card {
+    margin: 5px 0;
+    background-color: red;
+    box-shadow: 0 3px lightcoral;
+}
