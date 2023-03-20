@@ -1,10 +1,11 @@
 import AttributeCard from "../AttributeCard/AttributeCard";
 import "./DiscoverCard.css";
 
-const DiscoverCard = ({ name, attributes, image, banAttribute }) => {
+const DiscoverCard = ({name, attributes, image, banAttribute, onClickName }) => {
   return (
     <div className="card">
-      <h2>{name}</h2>
+      <button onClick={onClickName} className ="name-button"
+              role="button"> {name}</button>
       <div className="attribute-list">
         {attributes.map((attribute, index) => (
           <AttributeCard key={index} attribute={attribute} isBanned={false} onSubmit={banAttribute} />

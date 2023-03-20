@@ -20,3 +20,10 @@
     flex-direction: row;
     margin-bottom: 1rem;
 }
+.name-button {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: blue;
+    box-shadow: 0 3px lightcyan;
+    font-weight: bold;
+}
