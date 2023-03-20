@@ -14,23 +14,14 @@ The following **required** functionality is completed:
 - [x] **Only one item/API call is viewable at a time**
 - [x] **API calls appear random to the user**
 - [x] **At least one image is displayed per API call**
-- [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
 - [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
-
-The following **optional** features are implemented:
-
-- [ ] Multiple types of attributes can be added to the ban list
-- [ ] Users can see a stored history of their previously viewed items from their session
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
